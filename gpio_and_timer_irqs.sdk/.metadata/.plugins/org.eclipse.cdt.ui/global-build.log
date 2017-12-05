@@ -1,0 +1,39 @@
+18:41:58 **** Incremental Build of configuration Debug for project rtc ****
+make all 
+make: No se hace nada para 'all'.
+18:42:12 **** Auto Build of configuration Debug for project rtc ****
+make all 
+Building file: ../src/rtc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rtc.o" -I../../rtc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rtc.d" -MT"src/rtc.d" -o "src/rtc.o" "../src/rtc.c"
+Finished building: ../src/rtc.c
+ 
+Building target: rtc.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../rtc_bsp/ps7_cortexa9_0/lib -o "rtc.elf"  ./src/rtc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: rtc.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size rtc.elf  |tee "rtc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81272	   3120	  17612	 102004	  18e74	rtc.elf
+Finished building: rtc.elf.size
+ 
+18:42:54 **** Auto Build of configuration Debug for project rtc ****
+make all 
+Building file: ../src/rtc.c
+Invoking: ARM gcc compiler
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rtc.o" -I../../rtc_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/rtc.d" -MT"src/rtc.d" -o "src/rtc.o" "../src/rtc.c"
+Finished building: ../src/rtc.c
+ 
+Building target: rtc.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../rtc_bsp/ps7_cortexa9_0/lib -o "rtc.elf"  ./src/rtc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: rtc.elf
+ 
+Invoking: ARM Print Size
+arm-xilinx-eabi-size rtc.elf  |tee "rtc.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81272	   3120	  17612	 102004	  18e74	rtc.elf
+Finished building: rtc.elf.size
+ 
